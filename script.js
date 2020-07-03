@@ -17,7 +17,7 @@ function search(e){
 	
 	if(input.value !== ''){
 
-		fetch(`http://www.omdbapi.com/?apikey=1cf10687&t=${input.value}`)
+		fetch(`https://www.omdbapi.com/?apikey=1cf10687&t=${input.value}`)
 		.then(res => res.json())
 		.then(result => {
 			console.log(result);
